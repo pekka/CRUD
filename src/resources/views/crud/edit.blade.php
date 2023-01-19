@@ -4,7 +4,7 @@
   $defaultBreadcrumbs = [
     trans('backpack::crud.admin') => backpack_url('dashboard'),
     $crud->entity_name_plural => url($crud->route),
-    trans('backpack::crud.edit') => false,
+    trans('backpack::crud.edit_entity', ["entity_name" => $crud->entity_name]) => false,
   ];
 
   // if breadcrumbs aren't defined in the CrudController, use the default breadcrumbs
@@ -14,7 +14,7 @@
 @section('header')
 	<section class="container-fluid">
 	  <h2>
-        <span class="text-capitalize">{!! $crud->getHeading() ?? trans('backpack::crud.edit').' '.$crud->entity_name !!}</span>
+        <span class="text-capitalize">{!! $crud->getHeading() ?? trans('backpack::crud.edit_entity', ["entity_name" => $crud->entity_name]) !!}</span>
         <small>{!! $crud->getSubheading() ?? null !!}.</small>
 
         @if ($crud->hasAccess('list'))
