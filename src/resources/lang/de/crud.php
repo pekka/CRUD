@@ -21,13 +21,16 @@ return [
     'save_action_changed_notification' => 'Standardverhalten nach dem Speichern wurde geändert.',
 
     // Create form
-    'add'                 => 'Anlegen: ',
+    'add'                 => 'Anlegen',
+    'add_entity'          => ':entity_name anlegen',
     'back_to_all'         => 'Zurück zur Übersicht ',
     'cancel'              => 'Abbrechen',
-    'add_a_new'           => 'Neu anlegen: ',
+    'add_a_new'           => 'Neu anlegen',
 
     // Edit form
     'edit'                 => 'Bearbeiten',
+    'edit_entity'           => ':entity_name bearbeiten',
+    
     'save'                 => 'Speichern',
 
     // Translatable models
